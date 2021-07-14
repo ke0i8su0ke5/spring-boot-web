@@ -8,9 +8,6 @@ phases:
     commands:
       - java -version
       - mvn package
-  post_build:
-    commands:
-      - aws deploy push --application-name spring-boot-web --s3-location s3://ktakasak-artifact/spring-boot-web-artifact.zip --source target
 artifacts:
   files:
     - '*/spring-boot-web-0.0.1-SNAPSHOT.jar'
