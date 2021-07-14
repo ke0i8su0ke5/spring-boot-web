@@ -11,6 +11,6 @@ phases:
       - aws deploy push --application-name spring-boot-web --s3-location s3://ktakasak-artifact-spring/artifact.zip --source .
 artifacts:
   files:
-    - 'spring-boot-web-0.0.1-SNAPSHOT.jar'
-  base-directory: target
+    - 'target/spring-boot-web-0.0.1-SNAPSHOT.jar'
+    - 'appspec.yml'
   discard-paths: yes
