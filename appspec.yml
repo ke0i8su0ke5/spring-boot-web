@@ -3,3 +3,7 @@ os: linux
 files:
   - source: target/spring-boot-web-0.0.1-SNAPSHOT.jar
     destination: /opt/
+hooks:
+  ApplicationStart:
+    - location: /opt/scripts/startup.sh
+      runs: root
