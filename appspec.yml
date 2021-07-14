@@ -5,5 +5,5 @@ files:
     destination: /opt/
 hooks:
   ApplicationStart:
-    - location: /opt/scripts/startup.sh
+    - location: scripts/startup.sh
       runs: root
